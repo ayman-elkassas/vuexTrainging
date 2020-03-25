@@ -1,0 +1,23 @@
+<div>
+
+  <h3>Product List One</h3>
+
+  <ul>
+    <li v-for="product in products">
+      <span>{{product.name}}</span>
+      <span>{{product.price}}</span>
+    </li>
+  </ul>
+
+  <h3>Product With Sale</h3>
+  <ul>
+    <li v-for="product in saleProducts">
+      <span>{{product.name}}</span>
+      <span>{{product.price}}</span>
+    </li>
+  </ul>
+
+<!--  <button @click="reducePrice">Reduce price</button>-->
+  <button @click="reducePrice(4)">Reduce price</button>
+
+</div>
